@@ -1,23 +1,23 @@
-import React from "react";
-import { render } from "react-dom";
-import { Provider } from "react-redux";
-import { applyMiddleware, createStore, compose } from "redux";
-import thunkMiddleware from "redux-thunk";
-import rootReducer from "./reducers";
-import loggerMiddleware from "./middleware/logger";
-import monitorReducerEnhancer from "./enhancers/monitorReducer";
-import Todos from "./components/Todos";
-import App from "./App";
+import React from 'react'
+import { render } from 'react-dom'
+import { Provider } from 'react-redux'
+import { applyMiddleware, createStore, compose } from 'redux'
+import thunkMiddleware from 'redux-thunk'
+import rootReducer from './reducers'
+import loggerMiddleware from './middleware/logger'
+import monitorReducerEnhancer from './enhancers/monitorReducer'
+import Todos from './components/Todos'
+import App from './App'
 
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-const middlewareEnhancer = applyMiddleware(loggerMiddleware, thunkMiddleware);
+const middlewareEnhancer = applyMiddleware(loggerMiddleware, thunkMiddleware)
 const composedEnhancers = compose(
   middlewareEnhancer,
   monitorReducerEnhancer
-);
+)
 
-const store = createStore(rootReducer, undefined, composedEnhancers);
+const store = createStore(rootReducer, undefined, composedEnhancers)
 
 render(
   <Provider store={store}>
@@ -26,5 +26,5 @@ render(
       <Route path="/todo" component={Todos} />
     </Router>
   </Provider>,
-  document.getElementById("root")
-);
+  document.getElementById('root')
+)
