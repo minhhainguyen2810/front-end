@@ -18,6 +18,10 @@ const composedEnhancers = compose(
 )
 
 const store = createStore(rootReducer, undefined, composedEnhancers)
+console.log(
+  '%cLàm gì vậy, tính hách hệ thống người ta à',
+  'color: pink; font-size: 50px;'
+)
 
 render(
   <Provider store={store}>

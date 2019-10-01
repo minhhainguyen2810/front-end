@@ -1,7 +1,10 @@
 .App-logo {
-  animation: App-logo-spin infinite 3s linear;
   height: 40vmin;
   pointer-events: none;
+}
+
+.spin {
+  animation: App-logo-spin infinite 3s linear;
 }
 
 .App-header {
@@ -16,7 +19,8 @@
 }
 
 h1 {
-  font-family: 'Roboto', 'sans-serif';
+  font-family: 'Pacifico', cursive;
+  color: #ff69b4;
 }
 
 .container {

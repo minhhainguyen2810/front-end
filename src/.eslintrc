@@ -2,7 +2,8 @@
   "env": {
     "browser": true,
     "commonjs": true,
-    "es6": true
+    "es6": true,
+    "node": true
   },
   "plugins": ["react"],
   "extends": ["eslint:recommended", "plugin:react/recommended"],
@@ -12,9 +13,11 @@
     "semi": ["error", "never"]
   },
   "parserOptions": {
+    "ecmaVersion": 2020,
     "sourceType": "module",
     "ecmaFeatures": {
-      "jsx": true
+      "jsx": true,
+      "spread": true
     }
   }
 }
