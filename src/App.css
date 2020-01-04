@@ -4,6 +4,7 @@
 }
 
 .spin {
+  position: relative;
   animation: App-logo-spin infinite 3s linear;
 }
 
@@ -21,18 +22,18 @@
 h1 {
   font-family: 'Pacifico', cursive;
   color: #ff69b4;
-}
-
-.container {
   text-align: center;
-  margin: auto;
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
+    text-align: left;
+    left: -150px;
   }
   to {
     transform: rotate(360deg);
+    text-align: right;
+    left: 100vw;
   }
 }

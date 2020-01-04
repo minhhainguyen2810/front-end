@@ -4,11 +4,7 @@ import './App.css'
 
 function App() {
   const [spin, setSpin] = useState(true)
-  useEffect(() => {
-    setTimeout(() => {
-      setSpin(!spin)
-    }, 6000)
-  })
+  useEffect(() => {})
   return (
     <div className="container">
       <h1>This page is under construction ...</h1>
