@@ -1,15 +1,14 @@
-import React, { useEffect, useState } from 'react'
-import classNames from 'classnames'
+import React from 'react'
 import './App.css'
+import TodoApp from './components/Todos'
 
 function App() {
-  const [spin, setSpin] = useState(true)
-  useEffect(() => {})
   return (
-    <div className="container">
-      <h1>This page is under construction ...</h1>
-      <img className={classNames('App-logo', { spin })} src="images/Image from iOS.png" alt="Minh" />
-    </div>
+    // <div className="container">
+    //   <h1>This page is under construction ...</h1>
+    //   <img className="App-logo spin" src="images/Image from iOS.png" alt="Minh" />
+    // </div>
+    <TodoApp />
   )
 }
 

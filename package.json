@@ -17,7 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prettier": "prettier --write '**/*.{ts,js,css,html}'"
+    "prettier": "prettier --write '**/*.{ts,js,css,html}'",
+    "lint": "eslint --fix --ext .js,.jsx ."
   },
   "browserslist": [
     ">0.2%",

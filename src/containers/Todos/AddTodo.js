@@ -24,4 +24,8 @@ const AddTodo = ({ dispatch }) => {
   )
 }
 
+// AddTodo.propTypes = {
+//   dispatch: PropTypes.string.isRequired
+// }
+
 export default connect()(AddTodo)
